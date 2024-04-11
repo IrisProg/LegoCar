@@ -1,0 +1,411 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Inter-Medium';
+    src: url("../fonts/Inter-Medium.ttf");
+}
+
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url("../fonts/Inter-Regular.ttf");
+}
+
+.header {
+    box-sizing: border-box;
+    height: 106px;
+    background-color: #FBFBFB;
+    font-family: Inter-Regular, sans-serif;
+    padding-top: 15px;
+    padding-bottom: 12px;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3)
+
+}
+
+.hr-line {
+    margin-top: 10px;
+    height: 0;
+    border-top: 1px solid #CECECE;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    vertical-align: bottom;
+}
+
+.menu {
+    margin-left: 250px;
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+}
+
+.menu-item {
+    margin-right: 35px;
+}
+
+.menu-item a {
+    color: #666666;
+    font-size: 13px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menu-item a:hover {
+    border-bottom: 2px solid white;
+}
+
+.mobile-image {
+    display: none;
+}
+
+.adress {
+    margin-top: 10px;
+    display: flex;
+    font-size: 12px;
+    color: #666666;
+}
+
+.adress img {
+    vertical-align: bottom;
+    margin-right: 5px;
+}
+
+.adress_route {
+    margin-left: 40px;
+}
+
+.adress_time {
+    margin-left: auto;
+}
+
+.button {
+    padding: 11px 0;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 160px;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: auto;
+    font-size: 14px;
+    font-family: Inter-Medium, sans-serif;
+    color: #FBFBFB;
+    user-select: none;
+    background: #0B457F;
+}
+
+.button:hover {
+    background-color: #006CD8;
+}
+
+.products {
+    margin-bottom: 80px;
+}
+
+.products-items {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(3, 424px);
+    grid-auto-flow: column;
+    gap: 12px;
+    margin-top: 50px;
+    height: 512px;
+}
+
+.products-item {
+    padding: 30px;
+    background: #211A16;
+    border-radius: 16px;
+    border: 1px solid #353535;
+    color: #FBFBFB;
+    font-size: 14px;
+    font-family: Inter-Medium, sans-serif;
+    position: relative;
+}
+
+.products-title {
+    font-family: Inter-Medium, sans-serif;
+    margin-top: 60px;
+    font-size: 24px;
+}
+
+.products-item-title-big {
+    font-size: 18px;
+    font-family: Inter-Medium, sans-serif;
+
+}
+
+.products-item-title {
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: Inter-Regular, sans-serif;
+}
+
+.products-image {
+    position: absolute;
+}
+
+.car1 {
+    width: 95%;
+    bottom: 10px;
+    right: 10px;
+}
+
+.car2 {
+    width: 55%;
+    bottom: -10px;
+    right: -15px;
+}
+
+.car3 {
+    width: 35%;
+    bottom: 0;
+    right: 5px;
+}
+
+.car4 {
+    width: 95%;
+    bottom: 20px;
+    right: 10px;
+}
+
+.product-button {
+    padding: 11px 0;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 160px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: auto;
+    margin-top: 30px;
+    font-size: 14px;
+    font-family: Inter-Medium, sans-serif;
+    color: #FBFBFB;
+    user-select: none;
+    background: none;
+    border: 1px solid white;
+}
+
+.card1 {
+    grid-row: span 2;
+}
+
+.card4 {
+    grid-row: span 2;
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 900px) {
+    .container {
+        max-width: 850px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .mobile-image {
+        display: block;
+        margin-left: 20px;
+    }
+
+    .products-items {
+        grid-template-columns: repeat(2, auto);
+        grid-auto-flow: row;
+    }
+
+    .card1 {
+        grid-row: span 1;
+    }
+
+    .card4 {
+        grid-row: span 1;
+    }
+
+    .car1 {
+        width: 50%;
+        bottom: 0;
+        right: 10px;
+        left: 195px;
+    }
+
+    .car4 {
+        width: 60%;
+        bottom: 10px;
+        right: 10px;
+    }
+}
+
+@media only screen and (max-width: 899px) and (min-width: 600px) {
+    .container {
+        max-width: 680px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .products {
+        margin-bottom: 40px;
+    }
+
+    .adress_time {
+        display: none;
+    }
+
+    .adress_route {
+        display: none;
+    }
+
+    .adress_map {
+        display: none;
+    }
+
+    .header {
+        height: 64px;
+    }
+
+    .mobile-image {
+        display: block;
+        margin-left: 20px;
+    }
+
+    .products-items {
+        grid-template-columns: repeat(1, auto);
+        grid-auto-flow: row;
+    }
+
+    .car1 {
+        width: 35%;
+        bottom: 0;
+        right: 10px;
+    }
+
+    .car2 {
+        width: 27%;
+        bottom: 0;
+        right: -15px;
+    }
+
+    .car3 {
+        width: 20%;
+        bottom: 0;
+        right: 5px;
+    }
+
+    .car4 {
+        width: 30%;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .card1 {
+        grid-row: span 1;
+    }
+
+    .card4 {
+        grid-row: span 1;
+    }
+}
+
+@media only screen and (max-width: 599px) and (min-width: 244px) {
+    .container {
+        max-width: 335px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .button-order {
+        display: none;
+    }
+
+    .products {
+        margin-bottom: 40px;
+    }
+
+    .products-title {
+        font-size: 24px;
+    }
+
+    .adress_time {
+        display: none;
+    }
+
+    .adress_route {
+        display: none;
+    }
+
+    .adress_map {
+        display: none;
+    }
+
+    .header {
+        height: 64px;
+    }
+
+    .mobile-image {
+        display: block;
+        margin-left: 20px;
+    }
+
+    .products-items {
+        grid-template-columns: repeat(1, auto);
+        grid-auto-flow: row;
+    }
+
+    .car1 {
+        width: 35%;
+        bottom: 0;
+        right: 10px;
+    }
+
+    .car2 {
+        width: 27%;
+        bottom: 0;
+        right: 0;
+    }
+
+    .car3 {
+        width: 20%;
+        bottom: 0;
+        right: 5px;
+    }
+
+    .car4 {
+        width: 30%;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .card1 {
+        grid-row: span 1;
+    }
+
+    .card4 {
+        grid-row: span 1;
+    }
+}
